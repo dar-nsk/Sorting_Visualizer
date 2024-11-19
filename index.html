@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DSA Visualization</title>
+  <!-- Link to the CSS file -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Main Title -->
+    <h1>Sorting Algorithm Visualizer</h1>
+
+    <!-- Controls Section -->
+    <div class="controls">
+      <button id="generateArray">Generate Array</button>
+      <button id="bubbleSort" disabled>Bubble Sort</button>
+      <button id="mergeSort" disabled>Merge Sort</button>
+    </div>
+
+    <!-- Visualization Section -->
+    <div class="visualization" id="arrayContainer">
+      <!-- Bars will be dynamically generated here -->
+    </div>
+
+    <!-- Additional Information Section -->
+    <div id="additionalInfo" class="info-section">
+      <h2>Sorting Details</h2>
+      <p id="timeTaken">Time Taken: <span>0 ms</span></p>
+      <p id="comparisons">Number of Comparisons: <span>0</span></p>
+      <p id="swaps">Number of Swaps: <span>0</span></p>
+    </div>
+  </div>
+
+  <!-- JavaScript File -->
+  <script src="script.js" defer></script>
+</body>
+</html>
